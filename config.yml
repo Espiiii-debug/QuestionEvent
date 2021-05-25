@@ -1,70 +1,70 @@
-# PrÈfix du des commandes issues chat (prefix) (Ne pas confondre avec le prefix du plugin.yml)
+# Pr√©fix du des commandes issues chat (prefix) (Ne pas confondre avec le prefix du plugin.yml)
 prefix: "[QuestionEvent]:" 
 
 # Messages 
 message:
    error:
    
-      # Message pour un arguments ÈrronnÈ
-      # %prefix% = prefix dÈfini ‡ la balise prefix: (l2)
+      # Message pour un arguments √©rronn√©
+      # %prefix% = prefix d√©fini √† la balise prefix: (l2)
       argsMissing: "&cErreur, arguments incorrect. &9/question help &cpour plus d'information !"
       
       # Message pour un manque de permissions
-      # %prefix% = prefix dÈfini ‡ la balise prefix: (l2)
+      # %prefix% = prefix d√©fini √† la balise prefix: (l2)
       permissionMissing: "&cErreur, permissions manquantes"
       
    event:
       
-      # Question posÈ lors d'un event :
+      # Question pos√© lors d'un event :
       # -----------------------------
       # Variables : 
       # %question% = question; 
-      # %answer% = rÈponse;
-      # %prefix% = prefix dÈfini ‡ la balise prefix: (l2)
+      # %answer% = r√©ponse;
+      # %prefix% = prefix d√©fini √† la balise prefix: (l2)
       broadcastMessage: "%question% ?"
       
-      # RÈponse lors de la rÈussite/dÈfaite d'un joueur
+      # R√©ponse lors de la r√©ussite/d√©faite d'un joueur
       # ------------------------------------
       # Variables :
       # %player% = joueur;
-      # %answer% = rÈponse attendu;
-      # %question% = question posÈ;
-      # %playerAnswer% = rÈponse du joueur;*
-      # %prefix% = prefix dÈfini ‡ la balise prefix: (l2)
+      # %answer% = r√©ponse attendu;
+      # %question% = question pos√©;
+      # %playerAnswer% = r√©ponse du joueur;*
+      # %prefix% = prefix d√©fini √† la balise prefix: (l2)
       winMessage: ""
       looseMessage: ""
       
       # Message de fin d'event :
       #
-      # noBodyFoundEventAnswer : Si personne n'a trouvÈ (laisser vide si aucun message)
+      # noBodyFoundEventAnswer : Si personne n'a trouv√© (laisser vide si aucun message)
       # ----------------------------
       # Variables :
-      # %question% = question posÈ
+      # %question% = question pos√©
       # %answer% = reponse attendu
-      # %prefix% = prefix dÈfini ‡ la balise prefix: (l2)
+      # %prefix% = prefix d√©fini √† la balise prefix: (l2)
       # 
-      # aBodyFoundEventAnswer : Si quelqu'un a trouvÈ l'event (laisser vide si aucun message)
+      # aBodyFoundEventAnswer : Si quelqu'un a trouv√© l'event (laisser vide si aucun message)
       # ----------------------------
       # Variables :
-      # %question% = question posÈ
-      # %answer% = rÈponse attendu
+      # %question% = question pos√©
+      # %answer% = r√©ponse attendu
       # %player% = joueur gagnant
-      # %prefix% = prefix dÈfini ‡ la balise prefix: (l2)
+      # %prefix% = prefix d√©fini √† la balise prefix: (l2)
       noBodyFoundEventAnswer: ""
       aBodyFoundEventAnswer: ""
       
       
       
-   # Liste de Questions et de rÈponses :
+   # Liste de Questions et de r√©ponses :
    # --------------------------------------
-   # Question 1 = RÈponse 1
+   # Question 1 = R√©ponse 1
    # 
    # /// Ex. 
-   # questions: ["On le porte tout les jours ?", "Je suis mangÈ par les lapins ?", "Je suis l'habitat des lapins ?"]
+   # questions: ["On le porte tout les jours ?", "Je suis mang√© par les lapins ?", "Je suis l'habitat des lapins ?"]
    # answer: ["Vetements", "Carrotes", "Terriers"]
-   # %prefix% = prefix dÈfini ‡ la balise prefix: (l2)
-   questions: ["Qui est le plus beau ?", "Qui demande des snaps ?"]
-   answer: ["Espiiiii", "Flofydech"]
+   # %prefix% = prefix d√©fini √† la balise prefix: (l2)
+   questions: ["On le porte tout les jours ?", "Je suis mang√© par les lapins ?", "Je suis l'habitat des lapins ?"]
+   answer: ["Vetements", "Carrotes", "Terriers"]
 
 time:
    # Nombre entier OBLIGATOIRE. En heure(s).
