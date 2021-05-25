@@ -1,0 +1,36 @@
+# -------------------------------
+# TODO Espiiii, 2021-05-10:
+# Plugin Setup File
+# -------------------------------
+
+# Main Set-Up
+main: fr.onyxworld.espiiii.questionEvent.Main
+
+# Name Set-Up
+name: QuestionEvent
+
+# Version Declaration
+version: 1.0.0
+
+# Description Declaration
+description : Plugin Event for OnyxPrison
+
+# Api-Version Declaration
+api-version: 1.12
+
+# Load Initialisation 
+load: POSTWORLD
+
+# Author Declaration
+author: Espiiii
+
+# Website Declaration
+website: onyxworld.fr
+
+# Prefix Initialisation
+prefix: QuestionEvent
+
+# Command Initialisation
+commands :
+   # Command here
+

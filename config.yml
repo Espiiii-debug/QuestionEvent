@@ -1,0 +1,90 @@
+# Préfix du des commandes issues chat (prefix) (Ne pas confondre avec le prefix du plugin.yml)
+prefix: "[QuestionEvent]:" 
+
+# Messages 
+message:
+   error:
+   
+      # Message pour un arguments érronné
+      # %prefix% = prefix défini à la balise prefix: (l2)
+      argsMissing: "&cErreur, arguments incorrect. &9/question help &cpour plus d'information !"
+      
+      # Message pour un manque de permissions
+      # %prefix% = prefix défini à la balise prefix: (l2)
+      permissionMissing: "&cErreur, permissions manquantes"
+      
+   event:
+      
+      # Question posé lors d'un event :
+      # -----------------------------
+      # Variables : 
+      # %question% = question; 
+      # %answer% = réponse;
+      # %prefix% = prefix défini à la balise prefix: (l2)
+      broadcastMessage: "%question% ?"
+      
+      # Réponse lors de la réussite/défaite d'un joueur
+      # ------------------------------------
+      # Variables :
+      # %player% = joueur;
+      # %answer% = réponse attendu;
+      # %question% = question posé;
+      # %playerAnswer% = réponse du joueur;*
+      # %prefix% = prefix défini à la balise prefix: (l2)
+      winMessage: ""
+      looseMessage: ""
+      
+      # Message de fin d'event :
+      #
+      # noBodyFoundEventAnswer : Si personne n'a trouvé (laisser vide si aucun message)
+      # ----------------------------
+      # Variables :
+      # %question% = question posé
+      # %answer% = reponse attendu
+      # %prefix% = prefix défini à la balise prefix: (l2)
+      # 
+      # aBodyFoundEventAnswer : Si quelqu'un a trouvé l'event (laisser vide si aucun message)
+      # ----------------------------
+      # Variables :
+      # %question% = question posé
+      # %answer% = réponse attendu
+      # %player% = joueur gagnant
+      # %prefix% = prefix défini à la balise prefix: (l2)
+      noBodyFoundEventAnswer: ""
+      aBodyFoundEventAnswer: ""
+      
+      
+      
+   # Liste de Questions et de réponses :
+   # --------------------------------------
+   # Question 1 = Réponse 1
+   # 
+   # /// Ex. 
+   # questions: ["On le porte tout les jours ?", "Je suis mangé par les lapins ?", "Je suis l'habitat des lapins ?"]
+   # answer: ["Vetements", "Carrotes", "Terriers"]
+   # %prefix% = prefix défini à la balise prefix: (l2)
+   questions: ["Qui est le plus beau ?", "Qui demande des snaps ?"]
+   answer: ["Espiiiii", "Flofydech"]
+
+time:
+   # Nombre entier OBLIGATOIRE. En heure(s).
+   #
+   # /// Ex.
+   # loop: 6
+   loop: 6
+   
+   # Nombre entier OBLIGATOIRE. En minute(s).
+   #
+   # /// Ex.
+   # responseDelay : 1
+   responseDelay: 3
+   
+# Cadeau de joueurs :
+# Sous forme de commande console 
+# -------------------------------
+# Variables :
+# %player% = joueur gagnant
+# 
+# /// Ex.
+# offers: ["give %player% diamond_block 64", "gamemode 1 %player%", "op %player%"]
+offers: ["give %player% torch", "give %player% stone"]
